@@ -15,10 +15,8 @@ const main = async() => {
     const tareasDB = leerDB();
 
     if(tareasDB){
-        // Establecer las tareas
+        tareas.cargarTareasFromArray( tareasDB);
     }
-
-    await pausa();
 
     do{
         // Imprimir el menú
@@ -32,7 +30,7 @@ const main = async() => {
                 
                 break;
             case '2':
-                console.log( tareas.listadoArr)
+                console.log( tareas.listadoArr )
                 break;
         }
 
